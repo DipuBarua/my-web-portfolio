@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
-        <div>
+        <div className=" min-h-screen">
             <Helmet>
                 <title>DipankarBarua Portfolio | Home</title>
             </Helmet>
 
-            <div className=" pt-20 bg-blue-500">
+            <div className=" pt-20 bg-[#31304D]">
                 <div className=" flex">
                     <div className=" flex-1 mx-10">
                         <h2 className=" text-2xl font-bold">Hi, welcome to my portfolio</h2>
