@@ -27,7 +27,15 @@ const About = () => {
                     </div>
 
                     <div className=" text-xl border border-white rounded-xl items-center p-2 w-fit hover:bg-[#31304D]">
-                        <p>React</p>
+                        <p>React.js</p>
+                    </div>
+
+                    <div className=" text-xl border border-white rounded-xl items-center p-2 w-fit hover:bg-[#31304D]">
+                        <p>HTML5</p>
+                    </div>
+
+                    <div className=" text-xl border border-white rounded-xl items-center p-2 w-fit hover:bg-[#31304D]">
+                        <p>CSS3</p>
                     </div>
 
                     <div className=" text-xl border border-white rounded-xl items-center p-2 w-fit hover:bg-[#31304D]">

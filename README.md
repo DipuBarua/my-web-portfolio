@@ -6,3 +6,4 @@
 
 # Node packages:
 - react-helmet-async
+- emailJS (contact form)
