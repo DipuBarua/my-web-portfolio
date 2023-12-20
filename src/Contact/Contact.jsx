@@ -22,7 +22,7 @@ const Contact = () => {
         <div className="hero min-h-screen">
                 <div className="card w-full max-w-xl shadow-2xl shadow-[#B6BBC4] rounded-none my-16 text-black">
                     <form ref={form} onSubmit={sendEmail} className="card-body bg-[#31304D]">
-                        <h2 className=" text-center text-3xl font-bold text-white">Contact</h2>
+                        <h2 className=" text-center text-4xl font-bold text-white">CONTACT</h2>
 
                         {/* Name  */}
                         <div className="form-control">
