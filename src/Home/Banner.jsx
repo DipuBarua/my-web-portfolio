@@ -1,22 +1,38 @@
 import { Link } from "react-router-dom";
-import my_image from "../assets/image/dipu_300px 300px.jpg";
+import my_image from "../assets/image/my_image.png";
+import { FaCloudDownloadAlt } from "react-icons/fa";
+// import { Player } from 'video-react';
 
 const Banner = () => {
     return (
         <div>
-            <div className=" pt-20 bg-[#31304D]">
-                <div className=" flex">
+            <div className=" py-20 bg-[#31304D]">
+                <div className=" flex flex-col-reverse md:flex-row">
                     <div className=" flex-1 mx-10">
-                        <h2 className=" text-2xl font-bold">Hi, welcome to my portfolio</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates rem eveniet, itaque cumque excepturi quos animi et architecto, perspiciatis dolorem commodi id impedit ipsum nulla perferendis vel alias distinctio.
-                            Vero debitis odit nostrum explicabo veniam minima nam cupiditate? Voluptas molestiae illo, quasi ab officia excepturi rem! Distinctio reiciendis tenetur sint officia rerum quasi? Tenetur autem ipsam doloremque rerum maxime.</p>
+                        <h2 className=" text-3xl font-bold mb-2"><span className=" text-7xl pr-2">Hi!</span> Welcome to My Portfolio</h2>
+                        <p>
+                            This is Dipankar Barua. I am always enthusiastic about web development. Because I believe that web development is not just a job; it is a journey of constant exploration and innovation in the digital realm. Currently, I am engaged in developing MERN full-stack web projects. Always learning and ready to collaborate. I also believe that dreams come true through hard work.</p>
                         <div className=" my-5 flex items-center">
-                            <Link to={''} className="btn btn-primary rounded-none text-2xl">Download CV</Link>
-                            <Link to={''} className=" btn btn-circle btn-warning p-10 ml-5 text-center text-xs bg-opacity-10">Watch</Link>
+                            <Link to={`https://drive.google.com/uc?export=download&id=1Jle3V-BC2tNe0YXZzfm6FuQK2m0tEThN`} className="btn text-white rounded-none bg-black hover:bg-orange-600 border-none text-xl"><FaCloudDownloadAlt />Download Resume</Link>
+
+                            {/* <Link to={''} className=" btn btn-circle btn-warning p-10 ml-5 text-center text-xs bg-opacity-10">Watch
+                                <Player fluid aspectRatio="16:9">
+                                    <source src="" />
+                                </Player>
+
+                            </Link> */}
+                            {/* <video src=""></video> */}
+                            {/* react player - can use                              */}
+
                         </div>
                     </div>
-                    <div className=" flex-1 items-center ml-20">
-                        <img src={my_image} alt="" />
+                    <div className=" flex-1 items-center ml-32">
+                        {/* <img src={my_image3} alt="" /> */}
+                        <div className="avatar">
+                            <div className=" w-2/3 mask mask-hexagon bg-[#161A30]">
+                                <img src={my_image} />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -12,10 +12,14 @@ import img_9 from "../assets/project_img/project31.png";
 import img_10 from "../assets/project_img/project32.png";
 import img_11 from "../assets/project_img/project33.png";
 import img_12 from "../assets/project_img/project34.png";
+import { Helmet } from "react-helmet-async";
 
 const Projects = () => {
     return (
         <div className=" space-y-24 my-16 mx-10">
+            <Helmet>
+                <title>DipankarBarua Portfolio | Projects</title>
+            </Helmet>
             <h2 className=" text-center text-4xl font-bold">MY PROJECTS</h2>
             {/* first project  */}
             <div className="card lg:card-side bg-base-100 shadow-xl rounded-none mx-auto">

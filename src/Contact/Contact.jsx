@@ -1,5 +1,6 @@
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const Contact = () => {
     const form = useRef();
@@ -20,40 +21,43 @@ const Contact = () => {
     };
     return (
         <div className="hero min-h-screen">
-                <div className="card w-full max-w-xl shadow-2xl shadow-[#B6BBC4] rounded-none my-16 text-black">
-                    <form ref={form} onSubmit={sendEmail} className="card-body bg-[#31304D]">
-                        <h2 className=" text-center text-4xl font-bold text-white">CONTACT</h2>
+            <Helmet>
+                <title>DipankarBarua Portfolio | Contact</title>
+            </Helmet>
+            <div className="card w-full max-w-xl shadow-2xl shadow-[#B6BBC4] rounded-none my-16 text-black">
+                <form ref={form} onSubmit={sendEmail} className="card-body bg-[#31304D]">
+                    <h2 className=" text-center text-4xl font-bold text-white">CONTACT</h2>
 
-                        {/* Name  */}
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text text-white">Name</span>
-                            </label>
-                            <input type="text" name="from_name" />
-                        </div>
+                    {/* Name  */}
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text text-white">Name</span>
+                        </label>
+                        <input type="text" name="from_name" />
+                    </div>
 
-                        {/* Email  */}
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text text-white">Email</span>
-                            </label>
-                            <input type="email" name="user_email" />
-                        </div>
+                    {/* Email  */}
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text text-white">Email</span>
+                        </label>
+                        <input type="email" name="user_email" />
+                    </div>
 
-                        {/* Message  */}
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text text-white">Message</span>
-                            </label>
-                            <textarea name="message" />
-                        </div>
+                    {/* Message  */}
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text text-white">Message</span>
+                        </label>
+                        <textarea name="message" />
+                    </div>
 
-                        <div className="form-control mt-6">
-                            <button className="btn btn-outline rounded-none bg-[#B6BBC4] hover:bg-orange-600">Send</button>
-                        </div>
+                    <div className="form-control mt-6">
+                        <button className="btn btn-outline rounded-none bg-[#B6BBC4] hover:bg-orange-600">Send</button>
+                    </div>
 
-                    </form>
-                </div>
+                </form>
+            </div>
 
         </div>
 
