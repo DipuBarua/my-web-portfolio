@@ -12,6 +12,10 @@ import img_9 from "../assets/project_img/project31.png";
 import img_10 from "../assets/project_img/project32.png";
 import img_11 from "../assets/project_img/project33.png";
 import img_12 from "../assets/project_img/project34.png";
+import img_13 from "../assets/project_img/project41.png";
+import img_14 from "../assets/project_img/project42.png";
+import img_15 from "../assets/project_img/project43.png";
+import img_16 from "../assets/project_img/project44.png";
 import { Helmet } from "react-helmet-async";
 
 const Projects = () => {
@@ -21,6 +25,57 @@ const Projects = () => {
                 <title>DipankarBarua Portfolio | Projects</title>
             </Helmet>
             <h2 className=" text-center text-4xl font-bold">MY PROJECTS</h2>
+
+            {/* Recent project  */}
+            <div className="card lg:card-side bg-base-100 shadow-xl rounded-none mx-auto">
+                <figure className=" flex-1 my-auto">
+                    <ProjectSlides
+                        item_1={img_13}
+                        item_2={img_14}
+                        item_3={img_15}
+                        item_4={img_16}
+                    >
+                    </ProjectSlides>
+                </figure>
+                <div className="card-body text-black flex-1 ml-8">
+                    <h2 className="card-title font-bold">Hostel Meals Management System</h2>
+                    <h2>It is a website of meals management system for a hostel. User can buy package and can sent request for meal. Also user can share comment and like reaction. Admin can control all management from admin dashboard.</h2>
+                    <h2 className=" text-xl font-semibold">Featchers</h2>
+                    <div className=" mx-5 mb-2">
+                        <ul className=" list-decimal">
+                            <li>
+                                There is a firebase authentication/authorization ( Sign Up, Sign In ) system using email password and google.
+                            </li>
+                            <li>
+                                All meals are displayed through categories using tabs in the Home page.
+                            </li>
+                            <li>
+                                Need register user (private route) for using the Meal Details page to give reviews or like reactions.
+                            </li>
+                            <li>
+                                Payment system using stripe for user’s subscription.
+                            </li>
+                            <li>
+                                Dashboard ( private route ) for both of Users and Admins.
+                            </li>
+
+                            <li>
+                                <span className=" font-bold">Front-End:</span> React.js, React Router, Tailwind, JWT, Firebase authentication, DaisyUI, Tanstack Query, Axios, Stripe.
+                            </li>
+                            <li>
+                                <span className=" font-bold">Back-End:</span> Node.js, Express.js, MongoBD
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div className="card-actions justify-end">
+                        <Link to={`https://hostel-meals-management.web.app/`} className="btn text-white rounded-none bg-black hover:bg-orange-600">Live Preview</Link>
+
+                        <Link to={`https://github.com/DipuBarua/hostel-meals-management-client?tab=readme-ov-file`} className="btn text-white rounded-none bg-black hover:bg-orange-600">Client Side</Link>
+                    </div>
+                </div>
+            </div>
+
             {/* first project  */}
             <div className="card lg:card-side bg-base-100 shadow-xl rounded-none mx-auto">
                 <figure className=" flex-1 my-auto">
